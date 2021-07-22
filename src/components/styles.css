@@ -1,0 +1,164 @@
+:root {
+  --background-clr: hsl(240, 31%, 20%);
+  --btn-clr: #4c1d95;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgb(107, 33, 168),
+    rgb(76, 29, 149),
+    rgb(107, 33, 168)
+  );
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  background: #fff;
+  width: 40vw;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+}
+
+h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  padding-top: 0.5rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  margin: 1rem;
+}
+
+.input {
+  padding: 1rem;
+  width: 70%;
+  height: 0.7rem;
+  background: rgb(241, 241, 241);
+  border: transparent;
+  border-radius: 1rem;
+  outline: var(--btn-clr);
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.input:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.input:focus {
+  background: #fff;
+  border: 2px solid rgb(76, 29, 149);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.input::placeholder {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+button {
+  background: var(--btn-clr);
+  width: 80px;
+  height: 33px;
+  border: transparent;
+  border-radius: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+button:active {
+  opacity: 0.8;
+}
+button:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.list-item-container {
+  height: 375px;
+  margin: 1.5rem;
+  overflow: auto;
+}
+section {
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  justify-content: space-between;
+  background: rgb(241, 241, 241);
+  border-radius: 0.8rem;
+}
+p {
+  text-align: center;
+  padding: 0 7px;
+}
+.done {
+  text-decoration: line-through;
+}
+.delete-btn {
+  color: #ad0f06;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #f12b21;
+}
+.clear-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clear-btn {
+  margin-bottom: 0.3rem;
+  width: 80%;
+  background-color: #f12b21;
+}
+.clear-btn:hover {
+  background-color: #fa0c00;
+}
+
+/* *****************Break Points*********************** */
+@media screen and (min-width: 850px) and (max-width: 1125px) {
+  main {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 850px) {
+  main {
+    width: 60vw;
+  }
+  .list-item-container {
+    margin: 0rem;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 650px) {
+  main {
+    width: 70vw;
+  }
+  .list-item-container {
+    margin: 0rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    width: 95vw;
+  }
+  .list-item-container {
+    margin: 0rem;
+  }
+}
