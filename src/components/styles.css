@@ -80,9 +80,11 @@ button {
   cursor: pointer;
   letter-spacing: 2px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  outline: none;
 }
 button:active {
   opacity: 0.8;
+  outline: none;
 }
 button:hover {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -155,6 +157,10 @@ p {
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
   main {
     width: 95vw;
   }
