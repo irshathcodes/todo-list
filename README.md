@@ -1,5 +1,5 @@
 <a href="https://t-o-d-o-list.netlify.app/">
- # To-do List 
+ <h2> To-do List </h2>
  </a>
  
 ![readme-image](./assets/readme-image.png)
