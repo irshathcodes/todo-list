@@ -13,7 +13,7 @@ const TodoList = ({ id, name, done }) => {
   };
   return (
     <>
-      <section>
+      <section className="bounceInLeft">
         <input type="checkbox" onChange={handleCheckbox} />
         <p className={done ? "done" : null}>{!name ? "***empty*** " : name}</p>
         <div onClick={() => dispatch(deleteItem({ id }))}>
